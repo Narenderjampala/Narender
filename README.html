@@ -1,0 +1,30 @@
+<html>
+
+  <body>
+    <center>
+      <form name="narender" method="post" onsubmit="return mbv()">
+        enter your mobile no:
+        <input type="number" name="mb1">
+        <br>
+        <input type="submit" value="result">
+      </form>
+      <script>
+        function mbv()
+        {
+          var mb = document.narender.mb1.value;
+          if (mb.length == 10)
+          {
+            document.write("successfull")
+            return true;
+          }
+          else
+          {
+            alert("enter valid mobile no");
+            return false;
+          }
+        }
+      </script>
+    </center>
+  </body>
+
+</html>
